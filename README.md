@@ -10,4 +10,4 @@ Unity and Python communicate with UDP.
 
 ![media1](https://user-images.githubusercontent.com/75618251/119824528-f7b37200-bf30-11eb-982c-95e6ac6d68f2.gif)
 
-<img src="https://user-images.githubusercontent.com/75618251/119827570-40b8f580-bf34-11eb-903a-9f1965578f4e.png" width="800px">
+<img src="https://user-images.githubusercontent.com/75618251/119827570-40b8f580-bf34-11eb-903a-9f1965578f4e.png" width="500px">
