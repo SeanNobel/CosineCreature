@@ -2,10 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CreatureController : MonoBehaviour
+public class Motor : MonoBehaviour
 {
     int num_neurons = 8;
-    float power = 100f;
 
     Rigidbody rb;
     Vector3[] baseVectors;
@@ -38,11 +37,11 @@ public class CreatureController : MonoBehaviour
 
         Vector3 force = Vector3.zero;
         for(int i=0; i<num_neurons; i++) {
-            force += this.firing_rates[i] * this.baseVectors[i] / 10f;
+            force += this.firing_rates[i] * this.baseVectors[i] / 3.5f;
         }
 
         this.rb.AddForce(force);
 
-        Debug.Log(force[0]);
+        // Debug.Log(force[0]);
     }
 }

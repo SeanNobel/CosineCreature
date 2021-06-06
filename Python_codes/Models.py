@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+# Basically using https://github.com/takyamamoto/SNN-from-scratch-with-Python
 import numpy as np
 
 class IzhikevichNeuron: # 1クラス1ニューロン
