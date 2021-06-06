@@ -19,7 +19,6 @@ public class Brain : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
         udp = new UdpClient(LOCA_LPORT);
         udp.Client.ReceiveTimeout = 2000;
         thread = new Thread(new ThreadStart(ThreadMethod));
@@ -42,6 +41,7 @@ public class Brain : MonoBehaviour
 
             if(remoteEP != null)
             {
+                Debug.Log(text);
                 text = text.Remove(text.Length - 1);
                 text = text.Remove(0, 1);
 
@@ -50,7 +50,6 @@ public class Brain : MonoBehaviour
                 fRate_strlist.AddRange(text.Split(' '));
                 fRate_strlist.RemoveAll(s => s == "");
                 string[] fRate_str = fRate_strlist.ToArray();
-                Debug.Log(fRate_str.Length);
 
                 for(int i=0; i<this.num_neurons; i++)
                 {
